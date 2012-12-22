@@ -1,0 +1,7 @@
+#!/bin/bash
+
+# Install leap java sdk to local mvn repo until it's available at mvnrepository.com
+
+SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+
+mvn install:install-file -Dfile=$SCRIPT_DIR/../resources/LeapJava.jar -DgroupId=com.leapmotion -DartifactId=leapsdk -Dversion=0.1.0 -Dpackaging=jar
