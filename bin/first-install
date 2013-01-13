@@ -4,4 +4,4 @@
 
 SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
-mvn install:install-file -Dfile=$SCRIPT_DIR/../resources/LeapJava.jar -DgroupId=com.leapmotion -DartifactId=leapsdk -Dversion=0.1.0 -Dpackaging=jar
+mvn install:install-file -Dfile=$SCRIPT_DIR/../resources/LeapJava.jar -DgroupId=com.leapmotion -DartifactId=leapsdk -Dversion=0.7.1 -Dpackaging=jar
